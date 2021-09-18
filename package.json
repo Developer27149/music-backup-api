@@ -1,0 +1,36 @@
+{
+  "name": "music-backup-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/youyiqin/music-backup-api.git",
+  "author": "youyiqin <564151947@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.9.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^10.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "prod": "pm2 start bin/www",
+    "start": "node bin/www",
+    "test": "echo: no test files now.",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*": "prettier --write --ignore-unknown"
+  }
+}
