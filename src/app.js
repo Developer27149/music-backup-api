@@ -18,3 +18,5 @@ router.use('/1', index.routes(), index.allowedMethods());
 app.use(router.routes());
 
 app.listen(3333);
+
+module.exports = app;

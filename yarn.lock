@@ -337,6 +337,11 @@ astral-regex@^2.0.0:
   resolved "https://registry.npm.taobao.org/astral-regex/download/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha1-SDFDxWeu7UeFdZwIZXhtx319LjE=
 
+async@^1.4.0:
+  version "1.5.2"
+  resolved "https://registry.nlark.com/async/download/async-1.5.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fasync%2Fdownload%2Fasync-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
+  integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
+
 ava@^3.15.0:
   version "3.15.0"
   resolved "https://registry.npm.taobao.org/ava/download/ava-3.15.0.tgz#a239658ab1de8a29a243cc902e6b42e4574de2f0"
@@ -757,6 +762,13 @@ colorette@^1.4.0:
   resolved "https://registry.nlark.com/colorette/download/colorette-1.4.0.tgz?cache=0&sync_timestamp=1631964907930&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcolorette%2Fdownload%2Fcolorette-1.4.0.tgz#5190fbb87276259a86ad700bff2c6d6faa3fca40"
   integrity sha1-UZD7uHJ2JZqGrXAL/yxtb6o/ykA=
 
+combined-stream@^1.0.5:
+  version "1.0.8"
+  resolved "https://registry.nlark.com/combined-stream/download/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
+  integrity sha1-w9RaizT9cwYxoRCoolIGgrMdWn8=
+  dependencies:
+    delayed-stream "~1.0.0"
+
 commander@^7.2.0:
   version "7.2.0"
   resolved "https://registry.nlark.com/commander/download/commander-7.2.0.tgz?cache=0&sync_timestamp=1631257318022&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcommander%2Fdownload%2Fcommander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
@@ -766,6 +778,11 @@ common-path-prefix@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/common-path-prefix/download/common-path-prefix-3.0.0.tgz#7d007a7e07c58c4b4d5f433131a19141b29f11e0"
   integrity sha1-fQB6fgfFjEtNX0MxMaGRQbKfEeA=
+
+component-emitter@~1.2.0:
+  version "1.2.1"
+  resolved "https://registry.nlark.com/component-emitter/download/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
+  integrity sha1-E3kY1teCg/ffemt8WmPhQOaUJeY=
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -837,6 +854,11 @@ cookie@0.4.0:
   resolved "https://registry.nlark.com/cookie/download/cookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
   integrity sha1-vrQ35wIrO21JAZ0IhmUwPr6cFLo=
 
+cookiejar@2.0.6:
+  version "2.0.6"
+  resolved "https://registry.npm.taobao.org/cookiejar/download/cookiejar-2.0.6.tgz#0abf356ad00d1c5a219d88d44518046dd026acfe"
+  integrity sha1-Cr81atANHFohnYjURRgEbdAmrP4=
+
 cookies@~0.8.0:
   version "0.8.0"
   resolved "https://registry.npm.taobao.org/cookies/download/cookies-0.8.0.tgz#1293ce4b391740a8406e3c9870e828c4b54f3f90"
@@ -904,7 +926,7 @@ date-time@^3.1.0:
   dependencies:
     time-zone "^1.0.0"
 
-debug@2.6.9, debug@^2.2.0, debug@^2.6.9:
+debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.nlark.com/debug/download/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8=
@@ -1001,6 +1023,11 @@ del@^6.0.0:
     p-map "^4.0.0"
     rimraf "^3.0.2"
     slash "^3.0.0"
+
+delayed-stream@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.nlark.com/delayed-stream/download/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+  integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -1428,6 +1455,11 @@ express@^4.17.1:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
+extend@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/extend/download/extend-3.0.0.tgz#5a474353b9f3353ddd8176dfd37b91c83a46f1d4"
+  integrity sha1-WkdDU7nzNT3dgXbf03uRyDpG8dQ=
+
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npm.taobao.org/fast-deep-equal/download/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
@@ -1553,6 +1585,20 @@ follow-redirects@^1.14.0:
   version "1.14.4"
   resolved "https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.4.tgz?cache=0&sync_timestamp=1631622129411&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
   integrity sha1-g4/fSKi73XnlLuUfsclOPtmLk3k=
+
+form-data@1.0.0-rc3:
+  version "1.0.0-rc3"
+  resolved "https://registry.nlark.com/form-data/download/form-data-1.0.0-rc3.tgz#d35bc62e7fbc2937ae78f948aaa0d38d90607577"
+  integrity sha1-01vGLn+8KTeuePlIqqDTjZBgdXc=
+  dependencies:
+    async "^1.4.0"
+    combined-stream "^1.0.5"
+    mime-types "^2.1.3"
+
+formidable@~1.0.14:
+  version "1.0.17"
+  resolved "https://registry.nlark.com/formidable/download/formidable-1.0.17.tgz#ef5491490f9433b705faa77249c99029ae348559"
+  integrity sha1-71SRSQ+UM7cF+qdyScmQKa40hVk=
 
 forwarded@0.2.0:
   version "0.2.0"
@@ -2627,7 +2673,7 @@ merge2@^1.3.0:
   resolved "https://registry.npm.taobao.org/merge2/download/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=
 
-methods@^1.1.2, methods@~1.1.2:
+methods@1.x, methods@^1.1.2, methods@~1.1.1, methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/methods/download/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
@@ -2645,12 +2691,17 @@ mime-db@1.49.0:
   resolved "https://registry.nlark.com/mime-db/download/mime-db-1.49.0.tgz?cache=0&sync_timestamp=1631863129751&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fmime-db%2Fdownload%2Fmime-db-1.49.0.tgz#f3dfde60c99e9cf3bc9701d687778f537001cbed"
   integrity sha1-89/eYMmenPO8lwHWh3ePU3ABy+0=
 
-mime-types@^2.1.18, mime-types@~2.1.24:
+mime-types@^2.1.18, mime-types@^2.1.3, mime-types@~2.1.24:
   version "2.1.32"
   resolved "https://registry.nlark.com/mime-types/download/mime-types-2.1.32.tgz?cache=0&sync_timestamp=1627407703635&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fmime-types%2Fdownload%2Fmime-types-2.1.32.tgz#1d00e89e7de7fe02008db61001d9e02852670fd5"
   integrity sha1-HQDonn3n/gIAjbYQAdngKFJnD9U=
   dependencies:
     mime-db "1.49.0"
+
+mime@1.3.4:
+  version "1.3.4"
+  resolved "https://registry.npm.taobao.org/mime/download/mime-1.3.4.tgz?cache=0&sync_timestamp=1613584838235&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmime%2Fdownload%2Fmime-1.3.4.tgz#115f9e3b6b3daf2959983cb38f149a2d40eb5d53"
+  integrity sha1-EV+eO2s9rylZmDyzjxSaLUDrXVM=
 
 mime@1.6.0:
   version "1.6.0"
@@ -3244,6 +3295,11 @@ qrcode@^1.4.4:
     pngjs "^3.3.0"
     yargs "^13.2.4"
 
+qs@2.3.3:
+  version "2.3.3"
+  resolved "https://registry.npm.taobao.org/qs/download/qs-2.3.3.tgz#e9e85adbe75da0bbe4c8e0476a086290f863b404"
+  integrity sha1-6eha2+ddoLvkyOBHaghikPhjtAQ=
+
 qs@6.7.0:
   version "6.7.0"
   resolved "https://registry.npm.taobao.org/qs/download/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
@@ -3323,6 +3379,16 @@ read-pkg@^5.2.0:
     parse-json "^5.0.0"
     type-fest "^0.6.0"
 
+readable-stream@1.0.27-1:
+  version "1.0.27-1"
+  resolved "https://registry.npm.taobao.org/readable-stream/download/readable-stream-1.0.27-1.tgz#6b67983c20357cefd07f0165001a16d710d91078"
+  integrity sha1-a2eYPCA1fO/QfwFlABoW1xDZEHg=
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
+
 readable-stream@1.1.x:
   version "1.1.14"
   resolved "https://registry.npm.taobao.org/readable-stream/download/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
@@ -3368,6 +3434,11 @@ readdirp@~3.6.0:
   integrity sha1-dKNwvYVxFuJFspzJc0DNQxoCpsc=
   dependencies:
     picomatch "^2.2.1"
+
+reduce-component@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/reduce-component/download/reduce-component-1.0.1.tgz#e0c93542c574521bea13df0f9488ed82ab77c5da"
+  integrity sha1-4Mk1QsV0UhvqE98PlIjtgqt3xdo=
 
 regexpp@^3.1.0:
   version "3.2.0"
@@ -3823,6 +3894,31 @@ strtok3@^6.2.4:
     "@tokenizer/token" "^0.3.0"
     peek-readable "^4.0.1"
 
+superagent@^1.7.2:
+  version "1.8.5"
+  resolved "https://registry.npm.taobao.org/superagent/download/superagent-1.8.5.tgz#1c0ddc3af30e80eb84ebc05cb2122da8fe940b55"
+  integrity sha1-HA3cOvMOgOuE68BcshItqP6UC1U=
+  dependencies:
+    component-emitter "~1.2.0"
+    cookiejar "2.0.6"
+    debug "2"
+    extend "3.0.0"
+    form-data "1.0.0-rc3"
+    formidable "~1.0.14"
+    methods "~1.1.1"
+    mime "1.3.4"
+    qs "2.3.3"
+    readable-stream "1.0.27-1"
+    reduce-component "1.0.1"
+
+superkoa@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.nlark.com/superkoa/download/superkoa-1.0.3.tgz#87da2b712d05d00c066d82ad631fd667b34524e2"
+  integrity sha1-h9orcS0F0AwGbYKtYx/WZ7NFJOI=
+  dependencies:
+    debug "^2.2.0"
+    supertest "^1.2.0"
+
 supertap@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/supertap/download/supertap-2.0.0.tgz#8b587d6e14b8e885fa5183a9c45abf429feb9f7f"
@@ -3833,6 +3929,14 @@ supertap@^2.0.0:
     js-yaml "^3.14.0"
     serialize-error "^7.0.1"
     strip-ansi "^6.0.0"
+
+supertest@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.nlark.com/supertest/download/supertest-1.2.0.tgz#850a795f9068d2faf19e01799ff09962e0ce43be"
+  integrity sha1-hQp5X5Bo0vrxngF5n/CZYuDOQ74=
+  dependencies:
+    methods "1.x"
+    superagent "^1.7.2"
 
 supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"
