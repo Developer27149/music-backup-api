@@ -6,6 +6,8 @@
   "author": "youyiqin <564151947@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "NeteaseCloudMusicApi": "^4.0.23",
+    "axios": "^0.21.4",
     "koa": "^2.9.0",
     "koa-bodyparser": "^4.3.0",
     "koa-json": "^2.0.2",
@@ -14,6 +16,7 @@
     "koa-router": "^10.1.1"
   },
   "devDependencies": {
+    "ava": "^3.15.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -21,13 +24,13 @@
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
+    "nodemon": "^2.0.12",
     "prettier": "^2.4.1"
   },
   "scripts": {
-    "dev": "nodemon src/app.js",
-    "prod": "pm2 start bin/www",
-    "start": "node bin/www",
-    "test": "echo: no test files now.",
+    "dev": "npx nodemon src/app.js",
+    "prod": "pm2 start src/app.js",
+    "test": "npx ava -v",
     "prepare": "husky install"
   },
   "lint-staged": {
