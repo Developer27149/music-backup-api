@@ -1,12 +1,58 @@
 const router = require('koa-router')();
+const { user_cloud, song_url } = require('NeteaseCloudMusicApi'); // eslint-disable-line
+const cookieGenerator = require('../init');
 
-router.get('/ok', async (ctx) => {
-  ctx.body = 'ok';
+router.get('/song/:id', async (ctx) => {
+  const getData = async () => {
+    const res = await song_url({
+      id: ctx.params.id,
+      cookie: globalThis.cookie,
+    });
+    return res;
+  };
+  let res = await getData();
+  if (res.body.data[0].code !== 200) {
+    await cookieGenerator();
+    res = await getData(); // update cookie and try again
+  } else {
+    ctx.body = { url: res.body.data[0].url || '' };
+  }
 });
 
-router.get('/name', async (ctx) => {
+router.get('/songs', async (ctx) => {
+  const getData = async () => {
+    const res = await user_cloud({
+      cookie: globalThis.cookie,
+    });
+    const result = await Promise.all(
+      res.body.data.map((song) => {
+        const id = song.songId;
+        return song_url({ id, cookie: globalThis.cookie });
+      })
+    );
+    return { res, result };
+  };
+  let { res, result } = await getData();
+  // update cookie and try again
+  if (result.body.data[0].code !== 200) {
+    await cookieGenerator();
+    const data = await getData();
+    res = data.res;
+    result = data.result;
+  }
   ctx.body = {
-    name: 'aaron',
+    data: result.map((item, idx) => {
+      const { songId, songName, artist } = res.body.data[idx];
+      const { picUrl } = res.body.data[idx].simpleSong.al;
+      const { url } = item.body.data[0];
+      return {
+        songId,
+        songName,
+        artist,
+        url,
+        picUrl,
+      };
+    }),
   };
 });
 

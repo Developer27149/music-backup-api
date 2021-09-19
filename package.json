@@ -8,6 +8,7 @@
   "dependencies": {
     "NeteaseCloudMusicApi": "^4.0.23",
     "axios": "^0.21.4",
+    "dotenv": "^10.0.0",
     "koa": "^2.9.0",
     "koa-bodyparser": "^4.3.0",
     "koa-json": "^2.0.2",
@@ -35,6 +36,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*": "prettier --write --ignore-unknown"
+    "src/**/*": "prettier --write --ignore-unknown",
+    "test/**/*": "prettier --write --ignore-unknown"
   }
 }
