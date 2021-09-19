@@ -13,15 +13,13 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
         env:
-          PHONE: ${{ secrets.PHONE }}
+          PHONE: 15676383109
           PASS: ${{ secrets.PASS }}
           ACCESS_TOKEN: ${{ secrets.TOKEN }}
 
       - uses: egordm/gha-yarn-node-cache@v1
         with:
           node-version: '16.5.0'
-      - name: echo env variables
-        run: echo "${{secrets.PASS}} ${{secrets.TOKEN}}"
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: yarn install packages
