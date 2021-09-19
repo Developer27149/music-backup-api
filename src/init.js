@@ -4,6 +4,7 @@ const { login_cellphone } = require('NeteaseCloudMusicApi');
 dotenv.config();
 
 const cookieGenerator = async () => {
+  console.log(process.env.PASS, process.env.PHONE);
   console.log('generate cookie');
   try {
     const result = await login_cellphone({
