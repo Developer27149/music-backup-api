@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/youyiqin/music-backup-api.git",
+  "homepage": "https://youyiqin.github.io/music-backup-api",
   "author": "youyiqin <564151947@qq.com>",
   "license": "MIT",
   "dependencies": {
