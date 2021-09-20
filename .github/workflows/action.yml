@@ -2,7 +2,7 @@ name: GitHub Actions For My Vue Project Support API
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 env:
   PHONE: 15676383109
