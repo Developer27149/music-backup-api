@@ -27,13 +27,12 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "nodemon": "^2.0.12",
-    "pm2": "^5.1.1",
     "prettier": "^2.4.1",
     "superkoa": "^1.0.3"
   },
   "scripts": {
     "dev": "npx nodemon src/app.js",
-    "prod": "npx pm2 restart src/app.js",
+    "prod": "pm2 restart src/app.js",
     "test": "npx ava -v",
     "prepare": "husky install"
   },
