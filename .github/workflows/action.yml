@@ -28,5 +28,5 @@ jobs:
       - name: 同步部署
         run: rsync -avz . root@${{ secrets.SSH_IP2 }}:~/music-backend-api/
       - name: 登录服务器并且重启 PM2 服务
-        run: ssh root@${{ secrets.SSH_IP2 }} "echo 'ssss' > sss && cd music-backend-api && bash ./running.sh"
+        run: ssh root@${{ secrets.SSH_IP2 }} "cd music-backend-api && bash ./running.sh"
       - run: echo "🍏 This job's status is ${{ job.status }}."
