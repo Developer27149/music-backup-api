@@ -2,6 +2,4 @@
 source ~/.bashrc
 export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
-echo $PASS
-echo $PHONE
-yarn && pm2 reload ecosystem.config.js && pm2 restart ecosystem.config.js
+yarn && pm2 restart ecosystem.config.js
