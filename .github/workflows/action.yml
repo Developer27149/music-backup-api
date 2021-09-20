@@ -32,6 +32,4 @@ jobs:
         run: yarn install
       - name: service running 🔥
         run: pm2 restart --name app ./src/app.js
-          env:
-            CI: true
       - run: echo "🍏 This job's status is ${{ job.status }}."
