@@ -32,7 +32,7 @@
   },
   "scripts": {
     "dev": "npx nodemon src/app.js",
-    "prod": "pm2 restart src/app.js",
+    "prod": "pm2 restart ./src/app.js",
     "test": "npx ava -v",
     "prepare": "husky install"
   },
