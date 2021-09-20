@@ -27,5 +27,7 @@ jobs:
         run: ssh-keyscan -H ${{ secrets.SSH_IP }} >> ~/.ssh/known_hosts
       - name: 同步部署
         run: rsync -avz . root@${{secrets.SSH_IP}}:~/music-backend-api/
-
+      - name: 登录服务器并且重启 PM2 服务
+        run: ssh root@${{secrets.SSH_IP}}
+        run: ls && echo 'demo' > test.txt
       - run: echo "🍏 This job's status is ${{ job.status }}."
