@@ -21,12 +21,12 @@ jobs:
       - name: 安装 SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY2 }}
           known_hosts: 'lucky'
       - name: 添加可信任的服务器地址信息
-        run: ssh-keyscan -H ${{ secrets.SSH_IP }} >> ~/.ssh/known_hosts
+        run: ssh-keyscan -H ${{ secrets.SSH_IP2 }} >> ~/.ssh/known_hosts
       - name: 同步部署
-        run: rsync -avz . root@${{secrets.SSH_IP}}:~/music-backend-api/
+        run: rsync -avz . root@${{ secrets.SSH_IP2 }}:~/music-backend-api/
       - name: 登录服务器并且重启 PM2 服务
-        run: ssh root@${{secrets.SSH_IP}} "cd music-backend-api && bash ./running.sh"
+        run: ssh root@${{ secrets.SSH_IP2 }} "cd music-backend-api && bash ./running.sh"
       - run: echo "🍏 This job's status is ${{ job.status }}."
