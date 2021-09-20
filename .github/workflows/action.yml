@@ -31,5 +31,5 @@ jobs:
       - name: yarn install packages
         run: yarn install
       - name: service running 🔥
-        run: pm2 restart --name app ./src/app.js
+        run: pm2 reload ecosystem.config.js && pm2 start ecosystem.config.js
       - run: echo "🍏 This job's status is ${{ job.status }}."
