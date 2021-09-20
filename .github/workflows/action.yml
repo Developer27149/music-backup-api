@@ -3,11 +3,13 @@ on:
   push:
     branches:
       - main
+
+env:
+  PHONE: 15676383109
+  PASS: ${{ secrets.PASS }}
+  ACCESS_TOKEN: ${{ secrets.TOKEN }}
+
 jobs:
-  env:
-    PHONE: 15676383109
-    PASS: ${{ secrets.PASS }}
-    ACCESS_TOKEN: ${{ secrets.TOKEN }}
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
