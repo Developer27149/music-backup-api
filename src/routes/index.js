@@ -32,14 +32,7 @@ router.get('/songs', async (ctx) => {
     );
     return { res, result };
   };
-  let { res, result } = await getData();
-  // update cookie and try again
-  if (result.body.data[0].code !== 200) {
-    await cookieGenerator();
-    const data = await getData();
-    res = data.res;
-    result = data.result;
-  }
+  const { res, result } = await getData();
   ctx.body = {
     data: result.map((item, idx) => {
       const { songId, songName, artist } = res.body.data[idx];
