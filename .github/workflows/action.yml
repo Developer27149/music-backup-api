@@ -29,5 +29,5 @@ jobs:
       - name: yarn install packages
         run: yarn install
       - name: service running 🔥
-        run: yarn prod
+        run: yarn run prod
       - run: echo "🍏 This job's status is ${{ job.status }}."
