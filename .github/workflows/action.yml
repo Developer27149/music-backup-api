@@ -22,7 +22,7 @@ jobs:
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          know_hosts: 'lucky'
+          known_hosts: 'lucky'
       - name: 添加可信任的服务器地址信息
         run: ssh-keyscan -H ${{ secrets.SSH_IP }} >> ~/.ssh/known_hosts
       - name: 同步部署
