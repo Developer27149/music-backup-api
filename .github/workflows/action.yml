@@ -4,6 +4,10 @@ on:
     branches:
       - main
 jobs:
+  env:
+    PHONE: 15676383109
+    PASS: ${{ secrets.PASS }}
+    ACCESS_TOKEN: ${{ secrets.TOKEN }}
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
@@ -12,10 +16,6 @@ jobs:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v2
-        env:
-          PHONE: 15676383109
-          PASS: ${{ secrets.PASS }}
-          ACCESS_TOKEN: ${{ secrets.TOKEN }}
 
       - uses: egordm/gha-yarn-node-cache@v1
         with:
