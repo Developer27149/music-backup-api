@@ -1,7 +1,7 @@
 const router = require('koa-router')();
 const { user_cloud, song_url } = require('NeteaseCloudMusicApi'); // eslint-disable-line
 const cookieGenerator = require('../init');
-const { default: shouldGetNewData } = require('../lib');
+const shouldGetNewData = require('../lib');
 
 router.get('/test', async (ctx) => {
   ctx.body = 'test...';
